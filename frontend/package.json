@@ -1,0 +1,24 @@
+{
+  "name": "aurora-bay-frontend",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "build:bundled": "vite build --mode bundled",
+    "preview": "vite preview",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "aurora-bay": "file:..",
+    "socket.io-client": "^4.7.5",
+    "three": "^0.169.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.14.10",
+    "@types/three": "^0.169.0",
+    "typescript": "^5.5.3",
+    "vite": "^5.3.3"
+  }
+}

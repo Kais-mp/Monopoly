@@ -1,0 +1,23 @@
+{
+  "name": "aurora-bay",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Aurora Bay - a 3D online multiplayer property trading board game",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "install:all": "npm --prefix backend install && npm --prefix frontend install",
+    "dev": "npm run dev --prefix backend & npm run dev --prefix frontend",
+    "dev:backend": "npm run dev --prefix backend",
+    "dev:frontend": "npm run dev --prefix frontend",
+    "build": "npm run build --prefix frontend && npm run build --prefix backend",
+    "build:bundled": "npm run build:bundled --prefix frontend && npm run build --prefix backend",
+    "build:backend": "npm run build --prefix backend",
+    "build:frontend": "npm run build --prefix frontend",
+    "start": "npm start --prefix backend",
+    "typecheck": "npm run typecheck --prefix backend && npm run typecheck --prefix frontend",
+    "test": "npm test --prefix backend",
+    "smoke": "npm run smoke --prefix backend"
+  }
+}
